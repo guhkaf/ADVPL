@@ -6,7 +6,7 @@
 
 //-------------------------------------------------------------------
 /*/{Protheus.doc} FSWIPAD3.PRW
-@description Fonte Avaliação TOTVS IP - 02/04 - Criar 3 CTREE exportando dados da SC5 e SC6.
+@description Fonte Avaliação TOTVS IP - 03/04 - Criar 3 CTREE exportando dados da SC5 e SC6.
 @type User Function
 @author Gustavo Ricci
 @Date 24/10/2023
@@ -40,6 +40,7 @@ User Function FSWIPAD3()
 
 	Private cArquivo := ""
 	Private X
+    Private CQUERY
 
 	IF MSGYESNO("Esta rotina tem como finalidade extrair dados do pedido de vendas e gerar 3 arquivos formato ctree, deseja continuar ? ","Pergunta")
 

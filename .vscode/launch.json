@@ -9,7 +9,8 @@
 			"cwb": "${workspaceFolder}",
 			"smartclientBin": "E:/Programas/Protheus12_33/Protheus/bin/smartclient/smartclient.exe",
 			"isMultiSession": true,
-			"enableTableSync": true
+			"enableTableSync": true,
+			"enableMultiThread": true
 		}
 	],
 	"lastPrograms": [
@@ -21,7 +22,16 @@
 		},
 		{
 			"label": "SIGACOM"
+		},
+		{
+			"label": "XXXX"
+		},
+		{
+			"label": "U_XXXX"
+		},
+		{
+			"label": "U_START_DEBUG"
 		}
 	],
-	"lastProgramExecuted": "SIGACOM"
+	"lastProgramExecuted": "U_START_DEBUG"
 }

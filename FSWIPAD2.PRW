@@ -6,26 +6,10 @@
 
 //-------------------------------------------------------------------
 /*/{Protheus.doc} FSWIPAD2.PRW
-@description Fonte Avaliação TOTVS IP - 02/04 - Criar CTREE exportando dados da SC5 e SC6.
+@description Fonte Avaliação TOTVS IP - 02/04 - Criar CTREE exportando dados da SC5 e SC6 - Pedidos de vendas cabeçalho e itens.
 @type User Function
 @author Gustavo Ricci
 @Date 24/10/2023
-
-Premissas:
-
-2. Desenvolver rotina para exportar 1 arquivo, em formato DBF/CTREE, com informações do cabeçalho e dos itens de pedidos de vendas.
-Requisitos:
-
-Grupo de Perguntas (Pedido De... Pedido Até).
-DBF/CTREE deve conter as seguintes colunas:
-Número do pedido
-Nome do cliente
-Data de emissão
-Quantidade total de itens
-Valor total dos itens (soma dos Itens)
-Preço médio unitário dos itens
-Quantidades de volumes dos produtos
-Não utilizar SQL.
 /*/
 //-------------------------------------------------------------------
 

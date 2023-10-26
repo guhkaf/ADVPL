@@ -9,31 +9,6 @@
 @type User Function
 @author Gustavo Ricci
 @Date 24/10/2023
-
-Premissas:
-
-Deverão ser importados apenas produtos ativos cuja data de cadastro seja posterior a junho de 2002.
-Todos os produtos deverão ter como data de cadastro, no destino, a data da execução da rotina.
-Os produtos incluídos via essa rotina deverão ter um flag no destino informando que foram cadastrados via importação automática.
-Prever rotina de consistência com informação em tela para o usuário para um eventual ajuste no arquivo.
-Produtos com o campo cCor não preenchidos na origem deverão apresentar no destino o dado “N/A”.
-Ao final da importação bem-sucedida, a rotina deve apresentar uma mensagem com o número de produtos importados.
-Não utilizar SQL.
-
-Campo			Tipo			Pos. Inicial	Tamanho	Tipo Preenchimento	Observação
----------------------------------------------------------------------------------------------------------------------------------------------
-Código do Produto	Numérico		1			5			Espaço
-Nome do Produto		Alfanumérico	6			50			Espaço
-Data Cadastro		Numérico		56			8			Sem preenchimento	Formato DDMMAAAA
-Inativo			Numérico			64			1			Sem preenchimento	1-Inativo; 0-Ativo
-Pesobruto		Numérico			65			9			Zero
-Comprimento		Numérico			74			9			Zero
-Espeçura		Numérico			83			9			Zero
-Largura			Numérico			92			9			Zero
-Cor				Literal				101			15			Espaço
-Preço			Numérico			116			12			Espaço
-Tipo			Literal				128			1			Sem preenchimento	S - Serviço; P - Produto
-
 /*/
 //-------------------------------------------------------------------
 

@@ -6,33 +6,10 @@
 
 //-------------------------------------------------------------------
 /*/{Protheus.doc} FSWIPAD3.PRW
-@description Fonte Avaliação TOTVS IP - 03/04 - Criar 3 CTREE exportando dados da SC5 e SC6.
+@description Fonte Avaliação TOTVS IP - 03/04 - Criar 3 CTREE exportando dados da SC7 - Pedidos de Compras
 @type User Function
 @author Gustavo Ricci
 @Date 24/10/2023
-
-Premissas:
-
- Desenvolver rotina para exportar 3 arquivos, em formato DBF/CTREE, com informações do cabeçalho e dos itens de pedidos de compra.
-Requisitos:
-
-Grupo de Perguntas (Pedido De... Pedido Até).
-DBF/CTREE 01 deve conter as seguintes colunas (cabeçalho):
-Número do pedido
-Nome do fornecedor
-Data de emissão
-Valor total dos itens (soma dos Itens)
-DBF/CTREE 02 deve conter as seguintes colunas (itens):
-Código do produto
-Item
-Preço unitário
-Quantidade
-Valor total
-DBF/CTREE 03 deve conter as seguintes colunas (produtos):
-Código do produto
-Descrição produto
-Preço unitário do produto
-Utilizar SQL.
 /*/
 //-------------------------------------------------------------------
 
@@ -42,7 +19,7 @@ User Function FSWIPAD3()
 	Private X
     Private CQUERY
 
-	IF MSGYESNO("Esta rotina tem como finalidade extrair dados do pedido de vendas e gerar 3 arquivos formato ctree, deseja continuar ? ","Pergunta")
+	IF MSGYESNO("Esta rotina tem como finalidade extrair dados do pedido de compras e gerar 3 arquivos formato ctree, deseja continuar ? ","Pergunta")
 
 		//Chamando o cGetFile para pegar um arquivo txt ou xml, mostrando o servidor
 		IF !PERGUNTE("FSWIPAD3",.T.)
